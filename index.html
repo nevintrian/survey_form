@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Form</title>
+</head>
+
+<style>
+    body {
+        background: linear-gradient(#ccffff, #ffcccc);
+        background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+</style>
+
+<body>
+
+    <h1 id="title">Survei Form</h1>
+    <p id="description">ini adalah survey form, isikan data dengan benar ya</p>
+    <form id="survey-form" action="">
+        <label for="name" id="name-label">
+            nama :
+            <input type="text" name="name" id="name" placeholder="masukkan nama" required>
+        </label><br><br>
+
+        <label for="email" id="email-label">
+            email :
+            <input type="email" name="email" id="email" placeholder="masukkan email" required>
+        </label><br><br>
+
+        <label for="number" id="number-label">
+            umur :
+            <input type="number" name="number" id="number" placeholder="umur" min="1" max="100" required>
+        </label><br><br>
+
+        <label for="">pilih hobi : </label>
+        <input type="checkbox" name="badminton" id="badminton" value="badminton">
+        <label for="badminton">badminton</label>
+        <input type="checkbox" name="basket" id="basket" value="basket">
+        <label for="basket">basket</label>
+        <br><br>
+
+        <label for="">pilih jenis kelamin : </label>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki_laki">
+        <label for="laki_laki">laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">perempuan </label>
+        <br><br>
+
+        <label for="dropdown">
+            lulusan :
+            <select name="dropdown" id="dropdown">
+                <option value="SD">SD</option>
+                <option value="SMA">SMA</option>
+                <option value="S1">S1</option>
+            </select>
+        </label><br><br>
+
+        <label for="profil">profil : </label><br><br>
+        <textarea name="profil" id="" cols="30" rows="10"></textarea><br><br>
+        <button id="submit">submit</button>
+    </form>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
